@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JR熊取駅前キッチンカースペース</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+   
+
+    <!-- map用 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+
+    <script>
+    $(function(){
+        $('img[usemap]').rwdImageMaps();
+      });
+
+      imageMapResize();
+    </script>
+    
+    <!-- gallery用 -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css"> -->
+     <!-- ↑ハンバーガーメニュー消してくる -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+     <!-- galleryを表示 -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/css/6-1-6.css"> -->
+     <!-- ↑背景グレーにしてくる -->
+
+    <!-- おざさんpresents たいやきたち用 -->
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script> -->
+
+    
+    
+</head>
+<body>
+    
+    <header>
+        <h1 class="title">JR熊取駅前キッチンカースペース</h1>
+        <div class="header-area">
+            <div class="hamburger">
+              <!-- ハンバーガーメニューの線 -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <!-- /ハンバーガーメニューの線 -->
+            </div>
+          </div>
+          <div id="nav-content">
+              <ul class="slide-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#access">Access</a></li>
+                <li class="instagram"><a target="_blank" href="https://www.instagram.com/kitchen_car_kumatori_station/"><img src="img/instagram gray.png" alt="instagram"></a></li>
+              </ul>
+          </div>
+
+          <script>
+            $(function() {
+              $('#nav-content li a').on('click', function(event) {
+                $('.hamburger').trigger('click');
+              });
+            });
+            
+            $(document).on('click', function(event) {
+                if (!$(event.target).closest('.hamburger, #nav-content').length) {
+                    if ($('#nav-content').is(':visible')) {
+                    $('.hamburger').trigger('click');
+                    }
+                }
+            });
+            </script>
+        <!-- <nav>
+            <ul class="menu-items">
+                <li>MENU</li>
+                <li>ENGLISH</li>
+            </ul>
+        </nav> -->
+    </header>
+    
+    <main>
+
+        <section id="home">
+            <img class="hazime" src="img/Rental Space.png">
+        </section>
+
+        <section id="schedule">
+            <h2 class="sub-title"><span class="underline">Schedule</span></h2>
+            <!-- カレンダーstart-->
+            <!-- <h3 class="month">9月</h3>
+            <div class="calendar-wrap">
+                <table class="calendar"> -->
+                    <!-- <h3>September</h3> -->
+                  <!-- <thead>
+                    <tr>
+                      <th>Mon</th>
+                      <th>Tue</th>
+                      <th>Wed</th>
+                      <th>Thu</th>
+                      <th>Fri</th>
+                      <th class="sat">Sat</th>
+                      <th class="sun">Sun</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td class="mute">26</td>
+                        <td class="mute">27</td>
+                        <td class="mute">28</td>
+                        <td class="mute">29</td>
+                        <td class="mute">30</td>
+                        <td class="mute" class="sat">31</td>
+                        <td class="sun">1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                        <td id="taiyaki2">4<img id="taiyaki" src="img/taiyaki.png"> </td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="sat">7</td>
+                        <td class="sun">8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td class="sat">14</td>
+                        <td class="sun">15</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td id="kurape">17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="sat">21</td>
+                        <td class="sun">22</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td id="hamburger">27</td>
+                        <td class="sat">28</td>
+                        <td class="sun">29</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td class="mute">1</td>
+                        <td class="mute">2</td>
+                        <td class="mute">3</td>
+                        <td class="mute">4</td>
+                        <td class="mute" class="sat">5</td>
+                        <td class="mute" class="sun">6</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div> -->
+            <!-- <div class="nomarks"> -->
+                <!-- <div class="nomarks">
+                    <img class="nomark" src="my img/nomark.png">
+                </div>
+
+                <a href="taiyaki.html"><img id="taiyaki" src="img/taiyaki.png" ></a>
+                    <img id="kurape" src="img/kurape.png">
+                    <img id="hamburger" src="img/hamburger.png"> -->
+
+
+                <!-- img src="my img/mark.png" style="width: 100%;" usemap="#marks">
+
+                <map name="marks">
+                    <area shape="rect" coords="443,164,576,258" href="taiyaki.html" alt="たいやき">
+                </map>< -->
+
+                <!-- <div style="position: relative;">
+                    <img src="my img/mark.png" style="width: 100%; height: auto;">
+                    <a href="taiyaki.html"><div style="position: absolute; left: 15%; top: 20%; width: 12%; height: 8%;"></div></a>
+                  </div> -->
+
+            <!-- </div> -->
+
+            <!-- おざさんpresents -->
+            <div class="nomarks">
+                <img src="my img/mark.png" usemap="#marks">
+
+                <map name="marks">
+                    <area shape="rect" coords="739,431,956,271" href="taiyaki.html" alt="たいやき">
+                    <area shape="rect" coords="740,749,520,588" href="crepe.html" alt="クレープ">
+                    <area shape="rect" coords="1610,907,1392,749" href="hamburger.html" alt="ハンバーガー">
+                </map>
+            </div>
+
+            <div class="october">
+                <img src="img/october.png" usemap="#octobers">
+
+                <map name="octobers">
+                    <area shape="rect" coords="1426,122,1649,305" href="hotdog.html" alt="ホットドッグ">
+                    <area shape="rect" coords="304,487,528,668" href="taiyaki.html" alt="たいやき">
+                    <area shape="rect" coords="1203,670,1426,849" href="onigiri.html" alt="おにぎり">
+                </map>
+
+            </div>
+            <!-- カレンダーend-->
+
+
+        </section>
+
+        <section id="about">
+            <h2 class="sub-title"><span class="underline">About</span></h2>
+                <div class="about-div">
+                    <ul class="aboutabout">
+                        <li>利用料金:10,000円/日</li>
+                        <li>電源・簡易水道:別途1,000円/日</li>
+                        <li>アルコール:不可</li>
+                        <li>雨天キャンセル:可</li>
+                    </ul>
+                    <ul class="aboutabout">
+                        <li>奥行:5.50m</li>
+                        <li>間口:10.50m</li>
+                        <li>高さ:無制限</li>
+                    </ul>
+                </div>
+                <div class="onegai">出店料、電源水道代は当日現金払い</div>
+
+        </section>
+
+        <section id="gallery">
+            <h2 class="sub-title"><span class="underline">Gallery</span></h2>
+            <ul class="slider">
+                <li><img src="img/gallery.png" alt=""></li>
+                <li><img src="img/gallery mozi.png" alt=""></li>
+                <li><img src="img/gallery.png" alt=""></li>
+                <li><img src="img/gallery mozi.png" alt=""></li>
+                <li><img src="img/gallery.png" alt=""></li>
+                <li><img src="img/gallery mozi.png" alt=""></li>
+            </ul>
+
+            <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+             <!-- 消しても不具合なし -->
+            <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/js/6-1-6.js"></script>
+            <!-- ↑横並びとか -->
+        </section>
+
+        <section id="access">
+            <h2 class="sub-title"><span class="underline">Access</span></h2>
+            <div id="access-flex">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.8410348026537!2d135.33855127632773!3d34.4053861989999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000c944d1d20e51%3A0x73df68c5e0358c3b!2zSlLnhorlj5bpp4XliY3jgrnjg5rjg7zjgrk!5e0!3m2!1sen!2sjp!4v1723009972818!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="sub-title"><span class="underline">Contact</span></h2>
+            <!-- お問い合わせフォームstart-->
+            <div class="Form">
+                <div class="Form-Item">
+                  <p class="Form-Item-Label">instagramアカウント名</p>
+                  <input type="text" class="Form-Item-Input">
+                </div>
+                <div class="Form-Item">
+                  <p class="Form-Item-Label isMsg">お問い合わせ内容</p>
+                  <textarea class="Form-Item-Textarea"></textarea>
+                </div>
+                <!-- <input type="submit" class="Form-Btn" value="SUBMIT"> -->
+                <div class="button-08-submit">
+                    <a href="#contact">SUBMIT</a>
+                </div>
+                
+            </div>
+            <!-- お問い合わせフォームend -->
+        </section>
+
+
+    </main>
+    <footer> 
+        
+    </footer>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
