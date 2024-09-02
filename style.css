@@ -1,0 +1,1237 @@
+
+
+body{
+    background: #fff;
+    /* background: #FCF5E9; */
+    padding:0 5%;
+}
+
+@media (max-width:767px) {
+  body{
+    padding: 0 2%;
+  }
+}
+/* .background {
+    background-image: url('img/Rental\ Space2.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+} */
+
+.title{
+    font-size: 20px;
+    margin:15px;
+}
+
+@media (max-width:767px) {
+  .title{
+    font-size: 19px;
+    margin:15px;
+  }
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+    border-bottom: 1px solid;
+
+}
+
+/* CSSコード */
+h1 {
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+
+/* ハンバーガー始まり */
+#nav-content{
+  z-index: 9999;
+}
+body{
+    overflow-x: hidden;
+  }
+  .header-area{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    /* padding: 0 20px; */
+    padding: 0 5%;
+    align-items: center;
+    position:fixed;
+    right: 10px;
+  }
+  .hamburger{
+    width: 40px;
+    height: 25px;
+    position: relative;
+    transition: .5s;/* 追記 */
+  }
+
+  @media (max-width:767px) {
+    .hamburger{
+      width: 20px;
+      height: 15px;
+      padding: 0;
+    }
+
+  }
+
+  .hamburger span{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .8);
+    transition: .5s;/* 追記 */
+  }
+  .hamburger span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+    top: 0;
+  }
+  .hamburger span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+    top: 50%;
+  }
+  .hamburger span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+    top: 100%;
+  }
+  .slide-menu{
+    background-color: #fff;
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    left: 0;
+    transform: translateX(100%);
+    transition: .5s;/* 追記 */
+    list-style:none;
+    font-family: 'Cambria',sans-serif;
+  }
+  .slide-menu li{
+    color: rgba(0, 0, 0, .8);
+    line-height: 400%;
+    text-align: center;
+  }
+
+  a{
+    color:inherit
+  }
+
+  .hamburger.active{/* 追記 */
+    transform: rotateY(360deg);/* 追記 */
+  }
+  .hamburger.active span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .hamburger.active span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+    opacity: 0;/* 透明にする */
+  }
+  .hamburger.active span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .slide-menu.active{
+    transform: translateX(0);
+  }
+
+  .instagram{
+    margin: 15px;
+  }
+/* ハンバーガー終わり */
+
+#home{
+    text-align: center;
+}
+/* nav{
+    text-align: left;
+} */
+
+.menu-items{
+    display: flex;
+    /* justify-content: space-between;
+    margin:0 auto;  */
+    list-style:none;
+    text-align: right;
+    position: sticky;
+}
+
+.sub-title{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 130px;
+    font-family: 'Cambria',sans-serif;
+}
+
+.underline{
+    border-bottom: 1px solid;
+}
+
+.hazime{
+  margin-top:50px;
+  /* max-width:1000px;
+  max-height:500px; */
+  width: 100%;
+}
+
+@media (max-width:767px) {
+  .hazime{
+    max-width: 400px;
+  }
+}
+/* カレンダー始まり */
+/* .month{
+    text-align: center;
+}
+.calendar-wrap {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding-left: 200px;
+}
+
+@media (max-width: 767.98px) {
+  .calendar-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.calendar {
+  width: 180%;
+  height: 200%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.calendar th,
+.calendar td {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+}
+.calendar th {
+  padding: 6px 10px;
+}
+
+@media (max-width: 767.98px) {
+  .calendar th,
+  .calendar td {
+    padding: 6px;
+    font-size: 12px;
+  }
+  .calendar th {
+    padding: 3px 6px;
+  }
+}
+
+.calendar .sun {
+  color:#000;
+  background-color: #f8e4e2;
+}
+.calendar .sat {
+  color: #000;
+  background-color: #e7f6fd;
+}
+
+.calendar .mute {
+  color: #aaa;
+}
+
+#taiyaki{
+    max-width: 25px;
+    max-height: 30px;
+    margin-left:20px;
+}
+
+#taiyaki2{
+    padding:0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+} */
+
+/* .calender{
+  position: relative;
+  text-align: center;
+} */
+
+/* .nomarks img{
+  display: flex;
+  justify-content: center;
+  height: 900px;
+
+  max-width: 1000px;
+  max-height:500px;
+} */
+
+
+/* .nomarks{
+  display: flex;
+  justify-content: center;
+  height: 900px;
+}
+.nomark{
+  max-width: 1000px;
+  max-height:500px;
+} */
+
+.nomarks img{
+  width: 70%;
+  margin-left: 15%;
+}
+
+@media (max-width:767px) {
+  .nomarks img{
+     width: 100%;
+     margin-left: 0;
+   }
+}
+
+.october img{
+  width: 70%;
+  margin-left: 15%;
+}
+
+@media (max-width:767px) {
+  .october img{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* #taiyaki{
+  position: absolute;
+  max-width: 40px;
+  max-height: 40px;
+  top: 985px;
+  left: 600px;
+}
+
+#kurepe{
+  position:absolute;
+  max-width: 40px;
+  max-height: 40px;
+  top: 1130px;
+  left: 500px;
+}
+
+#hamburger{
+  position:absolute;
+  max-width: 40px;
+  max-height: 40px;
+  top: 1205px;
+  left: 905px;
+} */
+
+/* マウスオーバー */
+
+/* カレンダー終わり/ */
+
+
+.about-div{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+@media (max-width:767px) {
+  .about-div{
+    flex-direction: column;
+    padding-left: 70px;
+  }
+}
+.aboutabout{
+    list-style-type: circle;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+
+@media (max-width:767px) {
+  .aboutabout{
+      list-style-type: circle;
+      margin-left: 30px;
+      font-weight: 600;
+      font-size: 15px;
+      font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+    }
+}
+
+.onegai{
+    text-align: center;
+    padding-left: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+
+@media (max-width:767px){
+  .onegai{
+    text-align: center;
+    /* padding-left: 50px; */
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  }
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+  width:94%;
+   margin:0 auto;
+}
+
+.slider img {
+   width:100%;/*スライダー内の画像を横幅100%に*/
+   height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+   margin:0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+   position: absolute;/*絶対配置にする*/
+   top: 42%;
+   cursor: pointer;/*マウスカーソルを指マークに*/
+   outline: none;/*クリックをしたら出てくる枠線を消す*/
+   border-top: 2px solid #666;/*矢印の色*/
+   border-right: 2px solid #666;/*矢印の色*/
+   height: 15px;
+   width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+   left: -1.5%;
+   transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+   right: -1.5%;
+   transform: rotate(45deg);
+}
+
+ul{
+  padding: 0;
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align:center;
+  margin:20px 0 0 0;
+}
+/* ↑ドットを真ん中に */
+
+.slick-dots li {
+  display:inline-block;
+  margin:0 5px;
+}
+/* ↑横並び */
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width:5px;/*ドットボタンのサイズ*/
+  height:5px;/*ドットボタンのサイズ*/
+  /* display:block; */
+  /* border-radius:50%; */
+  background:#fff;/*ドットボタンの色*/
+}
+/* ↑数字を消してドットを表示 */
+
+.slick-dots .slick-active button{
+  background:#333;/*ドットボタンの現在地表示の色*/
+}
+/* ↑押したら色変わる */
+
+/* アクセスstart */
+#access-flex{
+  text-align: center;
+}
+
+map{
+  align-items: center;
+  width: 100%;
+  margin-left: 50px;
+  /* width:50%; */
+  /* margin-left: 100px; */
+  float: left;
+}
+
+@media (max-width:767px) {
+  iframe{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+  }
+}
+/* アクセスend */
+
+/* お問い合わせフォーム start */
+.Form {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
+@media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+  }
+  .Form-Item {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item {
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      flex-wrap: wrap;
+
+      font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+    }
+  }
+  .Form-Item:nth-child(5) {
+    border-bottom: 1px solid #ddd;
+  }
+  .Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label {
+      max-width: inherit;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label.isMsg {
+      margin-top: 0;
+    }
+  }
+  .Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #5bc8ac;
+    /* background:black; */
+    color: #fff;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label-Required {
+      border-radius: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 32px;
+      font-size: 10px;
+    }
+  }
+  .Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Input {
+      margin-left: 0;
+      margin-top: 18px;
+      height: 40px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Textarea {
+      margin-top: 18px;
+      margin-left: 0;
+      height: 200px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  /* .Form-Btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+
+    background: black;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Btn {
+      margin-top: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 160px;
+      font-size: 16px;
+    }
+  } */
+
+  .button-08-submit a {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    background: #333;
+    font-weight: 700;
+    border: solid 3px #333;
+    border-radius: 999px;
+    display: block;
+    box-sizing: border-box;
+    max-width: 300px;
+    text-align: center;
+    padding: 16px 64px;
+    margin: 24px;
+    margin-inline: auto;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    font-family: 'Cambria',sans-serif;
+  }
+
+  .button-08-submit a:hover {
+    color: #333;
+    background: initial;
+    transition: all 0.3s;
+  }
+
+  /* お問い合わせフォームend */
+footer{
+  height: 50px;
+}
+/* mark */
+.mark-flex{
+  display: flex;
+  justify-content: center;
+  font-family: 'Noto Sans JP', serif;
+}
+
+.ex{
+  max-width: 400px;
+  margin-top: 100px;
+  margin-left: 100px;
+  word-wrap: break-word;
+  font-size: 25px;
+}
+
+/* SUbMITボタン */
+/* .button-08 a { */
+  /* font-family: 'Noto Sans JP', serif; */
+  /* font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background: #333;
+  font-weight: 700;
+  border: solid 3px #333;
+  border-radius: 999px;
+  display: block;
+  box-sizing: border-box;
+  max-width: 300px;
+  text-align: center;
+  padding: 16px 64px;
+  margin: 24px;
+  margin-inline: auto;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  font-family: 'Cambria',sans-serif;
+
+}
+
+.button-08 a:hover {
+  color: #333;
+  background: initial;
+  transition: all 0.3s;
+} */
+
+
+
+/* 屋さん */
+
+.yasan{
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  background-color: #fffbde;
+}
+
+@media(max-width:1290px){
+  .yasan{
+    /* text-align: center; */
+    margin-top: 5%;
+  }
+}
+
+/* @media(max-width:767px){
+  h1{
+    font-size: ;
+  }
+} */
+.yasan-shop{
+  display: flex;
+  justify-content: center;
+
+}
+@media(max-width:1290px){
+ .yasan-shop{
+   /* display: flex; */
+   /* justify-content: center;  */
+   flex-direction: column;
+   text-align: center;
+  }
+}
+
+@media(max-width:1290px){
+  .yasan-picture img{
+     width: 100%;
+  }
+}
+
+.yasan-sentence{
+  margin-top: 100px;
+  margin-left: 100px;
+  font-weight: 600;
+  font-size: 18px;
+
+}
+
+@media(max-width:767px){
+  .yasan-sentence{
+    font-size: 15px;
+    margin-left: 0px;
+  }
+}
+
+@media(max-width:1290px){
+  .yasan-sentence{
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+
+/* たい焼き屋さんonly start */
+.taiyaki-menu{
+  margin-bottom: 100px;
+  font-size: 0;
+  text-align: center;
+  margin-left: 14%;
+}
+.taiyaki-menu li{
+  list-style: none;
+}
+.taiyaki-menu img{
+  max-width: 90%;
+  max-height: 90%;
+}
+.taiyaki-flavor1{
+  border: solid 3px #333;
+  border-radius: 15px;
+}
+.taiyaki-flavor1:hover{
+  background-color: #9d5b8b;
+  color: #fff;
+}
+.taiyaki-flavor2{
+  border: solid 3px #333;
+  border-radius: 15px;
+}
+.taiyaki-flavor2:hover{
+  background-color: #69b076;
+  color: #fff;
+}
+.taiyaki-flavor3{
+  border: solid 3px #333;
+  border-radius: 15px;
+}
+.taiyaki-flavor3:hover{
+  background-color: #a86f4c;
+  color: #fff;
+}
+.taiyaki-flavor4{
+  border: solid 3px #333;
+  border-radius: 15px;
+}
+.taiyaki-flavor4:hover{
+  background-color: #f7bd8f;
+  color: #fff;
+}
+.taiyaki-flavors-list1{
+  display: flex;
+}
+.taiyaki-flavors-list2{
+  display: flex;
+}
+.taiyaki-flavor-name{
+  font-weight: 600;
+  font-size: 40px;
+}
+.taiyaki-flavor-namae{
+  font-weight: 600;
+  font-size: 20px;
+}
+.taiyaki-flavor-cost{
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* たい焼き屋さんonly end */
+
+
+/* ハンバーガー屋さんonly start */
+.hamburger-menu{
+  margin-top: 50px;
+}
+.hamburger-food-menu{
+  text-align: right;
+  /* margin-right: 50px; */
+  /* margin-right: 30%; */
+  font-size: 50px;
+  color: #79563f;
+
+  /* margin-left: 950px; */
+  margin-left: 70%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  line-height: 150px;
+  background: #f08080;
+  text-align:center;
+}
+
+@media(max-width:480px){
+  .hamburger-food-menu{
+    margin-left: 65%;
+    font-size: 40px;
+    text-align: center;
+
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+  }
+
+  .taiyaki-menu{
+    margin-left: 0;
+  }
+}
+.hamburger-menu1{
+  margin-top: 30px;
+  display: flex;
+  margin-top: 100px;
+}
+.hamburger-regular{
+  font-size: 30px;
+  color: #79563f;
+  margin-left: 30px;
+}
+@media(max-width:480px){
+  .hamburger-regular{
+    font-size: 150%;
+  }
+}
+.hamburger-regular-sentence{
+  font-weight: 800;
+  color: #79563f;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-right: 100px;
+}
+@media(max-width:480px){
+  .hamburger-regular-sentence{
+    margin-right: 0;
+  }
+}
+ .hamburger-menu1 img{
+  max-width: 400px;
+}
+@media(max-width:480px){
+  .hamburger-menu1 img{
+    max-width: 100px;
+  }
+}
+
+.hamburger-menu2{
+  margin-top: 30px;
+  display: flex;
+  margin-top: 100px;
+}
+.hamburger-green{
+  font-size: 30px;
+  color: #79563f;
+  margin-left: 50px;
+}
+@media(max-width:480px){
+  .hamburger-green{
+    margin-left: 0px;
+  }
+}
+.hamburger-green-sentence{
+  font-weight: 800;
+  color: #79563f;
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+@media(max-width:480px){
+  .hamburger-green-sentence{
+    margin-right: 30px;
+    margin-left: 0;
+  }
+}
+.hamburger-menu2 img{
+  max-width: 400px;
+}
+@media(max-width:480px){
+  .hamburger-menu2 img{
+    max-width: 100px;
+  }
+}
+
+.hamburger-drink-menu{
+  /* text-align: left; */
+  margin-left: 30px;
+  margin-top: 100px;
+  font-size: 50px;
+  color: #79563f;
+
+  /* margin-right: 950px; */
+  /* margin-left: 90%; */
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #f08080;
+  text-align:center;
+  line-height: 150px;
+}
+@media(max-width:480px){
+  .hamburger-drink-menu{
+    margin-right: 60%;
+    font-size: 40px;
+    text-align: center;
+
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+  }
+}
+.hamburger-menu3{
+  margin-top: 30px;
+  display: flex;
+  margin-top: 100px;
+}
+.hamburger-cola{
+  font-size: 30px;
+  color: #79563f;
+  margin-left: 30px;
+}
+.hamburger-cola-sentence{
+  font-weight: 800;
+  color: #79563f;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-right: 100px;
+}
+@media(max-width:480px){
+  .hamburger-cola-sentence{
+    margin-right: 0;
+    margin-left: 30px;
+  }
+}
+.hamburger-menu3 img{
+  max-width: 400px;
+}
+@media(max-width:480px){
+  .hamburger-menu3 img{
+    max-width: 100px;
+  }
+}
+/* ハンバーガー屋さんonly end */
+
+
+/* クレープ屋さんonly start */
+.crepe-menu{
+  display: flex;
+}
+.crepe-menu li{
+  list-style: none;
+}
+/* .menu-category{
+  flex: 1;
+  font-size: 100px;
+  text-decoration: underline 1px;
+} */
+.crepe-menu-choice{
+  flex: 4;
+  text-align: center;
+}
+@media(max-width:480px){
+  .crepe-flavor-namae{
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+.crepe-menu img{
+  max-width: 90%;
+  max-height: 90%;
+}
+.crepe-flavors-list1{
+  display: flex;
+}
+.crepe-flavors-list2{
+  display: flex;
+}
+.crepe-flavors-list3{
+  display: flex;
+}
+.crepe-flavors-list4{
+  display: flex;
+}
+/* クレープ屋さんonly end */
+
+
+/* おにぎり屋さんonly start */
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+    to {
+    transform: translateX(-100%);
+  }
+  }
+.onigiri-scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.onigiri-scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0
+}
+.onigiri-scroll-infinity__list--left {
+  animation: infinity-scroll-left 80s infinite linear 0.5s both;
+}
+.onigiri-scroll-infinity__item {
+  width: calc(100vw / 6);
+}
+.onigiri-scroll-infinity__item img {
+  width: 80%;
+}
+
+.onigiri-menu-ex{
+  text-align: center;
+}
+.onigiri-menu-ex li{
+  list-style: none;
+}
+.onigiri-flavor-namae{
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 25px;
+}
+@media(max-width:480px){
+  .onigiri-flavor-namae{
+    font-size: 18px;
+  }
+}
+.onigiri-menu-ex img{
+  max-width: 200px;
+}
+@media(max-width:480px){
+  .onigiri-menu-ex img{
+    max-width: 150px;
+  }
+}
+.onigiri-oisi{
+  font-weight: 500;
+  font-size: 18px;
+}
+@media(max-width:480px){
+  .onigiri-oisi{
+    font-size: 13px;
+  }
+}
+#sekihan{
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+/* おにぎり屋さんonly end */
+
+
+/* ホットドッグ屋さんonly start */
+.slide{
+  font-family: Arial Black;
+  margin: 20px;
+  font-size: 60px;
+  overflow: hidden;/*左右アニメーションで画面からはみ出る際に出る横スクロールバーを隠す*/
+}
+@media(max-width:480px){
+  .slide{
+    font-size: 40px;
+  }
+}
+
+/*========= 流れるテキスト ===============*/
+
+/*全共通*/
+
+.slide-in {
+  overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+
+}
+
+/*左右のアニメーション*/
+.leftAnime{
+    opacity: 0;/*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+  animation-name:slideTextX100;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextX100 {
+  from {
+  transform: translateX(-100%); /*要素を左の枠外に移動*/
+        opacity: 0;
+  }
+
+  to {
+  transform: translateX(0);/*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft {
+  animation-name:slideTextX-100;
+  animation-duration:0.8s;
+  animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+.menu{
+  background-color: #2C4473;
+}
+
+@media(max-width:480px){
+  .menu img{
+    max-width: 50%;
+  }
+}
+.slide{
+  color: #EDE6D7;
+}
+.slide1{
+  text-align: left;
+  /* color: transparent; */
+  /* text-shadow: 1px 1px 0px #2C4473, -1px -1px 0px #2C4473; */
+}
+.slide2{
+  margin-left: 50px;
+}
+.slide3{
+  margin-left: 100px;
+}
+.menu1{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 1000;
+  color: #EDE6D7;
+  margin-bottom: 80px;
+}
+@media(max-width:480px){
+  .menu1{
+    font-size: 30px;
+  }
+}
+.menu2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 1000;
+  color: #EDE6D7;
+}
+.menu3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 1000;
+  color: #EDE6D7;
+}
+.slide4{
+  text-align: right;
+  margin-right: 100px;
+}
+.slide5{
+  text-align: right;
+  margin-right: 50px;
+}
+.slide6{
+  text-align: right;
+}
+/* ホットドッグ屋さんonly end */
